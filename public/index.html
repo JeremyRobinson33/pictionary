@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>MiniDoodle</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="styles.css" />
+      <script src="socket.io/socket.io.js"></script>
+      <script src="sketch.js"></script>
+   </head>
+   <body>
+      <canvas id="drawing"></canvas>
+      <input type="button" value="Clear" onclick="clearit();"/>
+      <div id="guess">
+          <button class="g" type="button">Submit Guess</button>
+          <input class="guess" type="text" value="">
+          <div id="guess_history"></div>
+
+          <script src="game.js"></script>
+      </div>
+   </body>
+</html>
